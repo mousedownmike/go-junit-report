@@ -42,7 +42,7 @@ JSON produced by `go test -json` is supported by the `gojson` parser. Note that
 errors to be detected. For example:
 
 ```bash
-go test -json 2>&1 | go-junit-report -parser gojson > report.xml
+go test -json 2>&1 ./... | go-junit-report -parser gojson > report.xml
 ```
 
 Go benchmark output is also supported. The following example runs benchmarks for
